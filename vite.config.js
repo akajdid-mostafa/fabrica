@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
 
     return {
         root: "src",
-        base: "/fabrica/",
+        base: "/",
         // publicDir: "../public",
         server: { open: true, },
         plugins: [
