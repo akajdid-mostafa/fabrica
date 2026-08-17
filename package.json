@@ -9,7 +9,7 @@
         "build": "vite build",
         "preview": "vite preview"
     },
-    "author": "Unifato",
+    "author": "Mostafa Akajdid",
     "private": true,
     "devDependencies": {
         "@tailwindcss/vite": "^4.1.18",

@@ -130,8 +130,8 @@ Replace images in `src/assets/images/` with your own. Keep the same filenames or
 
 If you have any questions or issues, feel free to reach out:
 
-- **Website:** [unifato.com](https://unifato.com/)
-- **Email:** [unifato.themes@gmail.com](mailto:unifato.themes@gmail.com)
+- **Website:** [akajdidm.vercel.app](https://akajdidm.vercel.app/)
+- **Email:** [mostafaakajdid6@gmail.com](mailto:mostafaakajdid6@gmail.com)
 
 ## License
 
@@ -141,6 +141,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 <div align="center">
 
-Built with care by [Unifato](https://unifato.com/)
+Built with care by [Mostafa Akajdid](https://akajdidm.vercel.app/)
 
 </div>

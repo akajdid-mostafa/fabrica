@@ -1,9 +1,9 @@
 /*
 Template Name: Fabrica - Manufacturing Services Website TailwindCSS 4 Template
 Version: 1.0.0
-Author: Unifato
-Website: https://unifato.com/
-Email: unifato.themes@gmail.com
+Author: Mostafa Akajdid
+Website: https://akajdidm.vercel.app/
+Email: mostafaakajdid6@gmail.com
 File: App js
 */
 
