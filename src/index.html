@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> title-meta title="Fabrica - Tailwind CSS 4 Template" }}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <!-- Hero Section -->
+    <section class="overflow-hidden relative size-full lg:pt-50 pt-35">
+        <div class="container-full relative z-10">
+            <div class="grid xl:grid-cols-4 items-center xl:gap-20 gap-12.5 mb-32.5">
+                <div class="xl:col-span-3">
+                    <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                        <div class="size-2 bg-primary"></div>
+                        <div class="text-sm text-default-900">Trusted manufacturing partner</div>
+                    </div>
+
+                    <h1 class="font-bold lg:text-7xl md:text-[56px] text-[48px] mt-4">From raw <span class="text-primary">material</span> <br> to market-ready</h1>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="text-sm text-default-900 mb-2.5">// SINCE - 2005 //</div>
+                        <p class="mb-7.5">From concept to production, we deliver high-quality, scalable, and cost-effective solutions tailored to your business needs.</p>
+
+                        <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                            <!-- TEXT -->
+                            <span class="py-3.75 ps-6">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Explore Our Capabilities
+                                    </span>
+                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Explore Our Capabilities
+                                    </span>
+                                </span>
+                            </span>
+
+                            <!-- ICON -->
+                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between mb-10">
+                <div class="text-sm text-default-900">Based in: Los Angeles, USA</div>
+                <a href="#footer" class="text-center uppercase text-sm transition-colors hover:text-primary">Scroll Down</a>
+                <div class="text-sm text-default-900">21.0278° N, 105.8342° E</div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(../images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+
+    <!-- About / Who We Are Section -->
+    <section class="relative overflow-hidden">
+        <div class="overflow-hidden lg:h-275 h-250 w-full relative">
+            <video id="myVideo" loop autoplay muted class="bg-[url('../images/other/video-bg.jpg')] object-cover bg-cover bg-position-[50%] flex w-full h-full absolute -inset-full m-auto -z-10">
+                <source src="assets/images/other/video.mp4" type="video/mp4" class="object-bottom">
+                <source src="assets/images/other/video.webm" type="video/webm" class="object-bottom">
+            </video>
+
+            <div class="absolute end-10 bottom-10 z-100">
+                <button id="toggleBtn" class="size-10 flex items-center justify-center bg-default-900 text-white rounded-full">
+                    <i class="iconify tabler--player-play-filled size-4 hidden" id="playIcon"></i>
+                    <i class="iconify tabler--player-pause-filled size-4" id="pauseIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 flex items-end justify-center z-100 mb-25">
+            <div>
+                <div class="mx-auto w-60 p-2.5 rounded border border-white/10 bg-default-900/20 mb-5">
+                    <img src="assets/images/a-quote.webp" alt="Hero Quote Image" class="mb-4 size-full rounded">
+
+                    <div class="text-center">
+                        <div class="text-white mb-1">Michael R. Bennett</div>
+                        <div class="text-default-400 text-base">Founder &amp; CEO</div>
+                    </div>
+                </div>
+
+                <p class="text-white text-center w-97">Great manufacturing isn't just about precision it's about vision, commitment, and the relentless pursuit of excellence.</p>
+            </div>
+        </div>
+
+        <div class="-mb-12.5 bg-[linear-gradient(180deg,var(--color-default-900)_25%,var(--color-primary))] z-10 h-100 absolute bottom-0 inset-x-0 filter-[blur(40px)]"></div>
+    </section>
+
+    <!-- Capabilities / What We Do Section -->
+    <section class="relative size-full bg-default-100 lg:py-50 md:py-25 py-20">
+        <div class="container relative z-10">
+            <div class="grid xl:grid-cols-3 items-center gap-8 mb-32.5">
+                <div>
+                    <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                        <div class="size-2 bg-primary"></div>
+                        <div class="text-sm text-default-900">Who we are</div>
+                    </div>
+
+                    <div class="mt-7.5 mb-2.5 flex -space-x-4.5">
+                        <img src="assets/images/user/avatar-2.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-3.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-4.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-1.png" alt="avatar-1" class="size-14 p-0.5 bg-white rounded-md">
+                        <div class="size-14 p-0.5 bg-white rounded-md">
+                            <div class="bg-default-900 text-white rounded flex items-center justify-center size-full">
+                                10+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-sm">Team Of passionate<br>professionals</div>
+                </div>
+
+                <div class="xl:col-span-2">
+                    <div>
+                        <h2 class="lg:text-[58px] md:text-[34px] text-[28px]/[1.1] text-default-900 mb-7.5">Driven by technology, backed by experience, focused on
+                            <span class="text-primary">manufacturing</span>
+                            excellence
+                        </h2>
+
+                        <p class="mb-7.5">Backed by advanced technology, skilled craftsmanship, and a commitment to quality, we help businesses bring their ideas to life with confidence and speed. Whether it's prototyping or full-scale production, we're your trusted partner every step of the way.</p>
+
+                        <div class="flex flex-wrap items-center lg:gap-7.5 gap-4">
+                            <a href="about.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                                <!-- TEXT -->
+                                <span class="py-3.75 ps-6">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            Learn More About Us
+                                        </span>
+                                        <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            Learn More About Us
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <!-- ICON -->
+                                <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                        <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+
+                            <a href="#" target="_blank" class="text-primary underline transition-all hover:decoration-transparent flex items-center">
+                                Download Brochure
+                                <i class="iconify tabler--download size-6 ms-4"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-full relative z-10">
+            <div class="flex flex-wrap justify-center">
+                <div class="bg-white border border-default-300 rounded-full lg:size-112 size-72 flex flex-col items-center justify-center text-center lg:pt-30 pt-14 overflow-hidden">
+                    <div class="text-primary lg:mb-7.5 mb-5">// 2005-2K25 //</div>
+
+                    <div data-target="20" class="text-4xl text-default-900 font-bold">20+</div>
+
+                    <p class="text-base lg:w-75 w-57">Delivering consistent manufacturing excellence since day one.</p>
+
+                    <img src="assets/images/about/group.png" alt="" class="lg:h-36.5 h-17.5 mt-auto">
+                </div>
+
+                <img src="assets/images/about/about-image.webp" alt="" class="lg:size-112 size-72 rounded-full">
+
+                <div class="bg-white border border-default-300 rounded-full lg:size-112 size-72 flex flex-col items-center justify-center text-center overflow-hidden p-8">
+                    <img src="assets/images/logo.svg" alt="" class="lg:h-7.5 h-5 mb-10">
+
+                    <div data-target="20" class="lg:text-[58px] md:text-[34px] text-[28px] text-default-900 mb-2.5"> <span class="text-primary">100</span>+</div>
+
+                    <p class="text-base lg:w-75 w-57 mb-8">Delivering consistent manufacturing excellence since day one.</p>
+
+                    <div class="space-y-2.5">
+                        <div class="text-3xl">4.9 <span class="text-sm">/5.0</span></div>
+
+                        <div class="lg:flex hidden gap-1.5">
+                            <i class="iconify tabler--star-filled flex size-4 text-default-600"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-default-600"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-default-600"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-default-600"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-default-600"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-default-900 rounded-full lg:size-112 size-72 flex flex-col gap-2.5 items-center justify-center text-center overflow-hidden">
+                    <div class="flex items-center justify-center xl:mb-5 mb-2.5">
+                        <img src="assets/images/about/product-2.png" alt="" class="lg:h-17.5 h-15 border-2 border-default-900 rounded translate-x-2.5 -rotate-10">
+                        <img src="assets/images/about/product-3.png" alt="" class="lg:h-17.5 h-15 border-2 border-default-900 rounded -translate-y-1.25 relative z-10">
+                        <img src="assets/images/about/product-1.png" alt="" class="lg:h-17.5 h-15 border-2 border-default-900 rounded -translate-x-2.5 rotate-10">
+                    </div>
+                    <div data-target="20" class="lg:text-[58px] md:text-[34px] text-[28px] text-white mb-2.5"> 1 million<span class="text-primary">+</span></div>
+
+                    <p class="text-default-100 lg:w-75 w-57 mb-8">Precision-crafted components delivered globally.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(../images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+
+    </section>
+
+    <!-- Services Features Section -->
+    <section class="relative size-full lg:py-50 md:py-25 py-20">
+        <div class="container-full relative z-10">
+            <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                <div class="size-2 bg-primary"></div>
+                <div class="text-sm text-default-900">What We Do</div>
+            </div>
+
+            <div class="grid xl:grid-cols-2 items-center xl:gap-20 gap-12.5 mt-7.5">
+                <div>
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Scalable <span class="text-primary">capabilities</span> for <br> every challenge</h1>
+                </div>
+
+                <div class="ms-auto">
+                    <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all">
+                        <!-- TEXT -->
+                        <span class="py-3.75 ps-6">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Explore Our Capabilities
+                                </span>
+                                <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Explore Our Capabilities
+                                </span>
+                            </span>
+                        </span>
+
+                        <!-- ICON -->
+                        <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                                <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-17.5"></div>
+
+            <div class="flex flex-col justify-start items-center">
+                <!-- Service 1 -->
+                <div class="bg-white border-t border-default-300 lg:sticky top-25">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <img src="assets/images/service/icon-1.svg" class="size-10">
+                                    <div>
+                                        <img src="assets/images/service/service-1.png" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Product assembly</h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Manual & automated assembly</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Functional testing protocols</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Custom packaging design</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Supply chain management</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border-t border-default-300 lg:sticky top-50">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <img src="assets/images/service/icon-2.svg" class="size-10">
+                                    <div>
+                                        <img src="assets/images/service/service-2.png" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Sheet metal fabrication</h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Laser cutting up to 1&quot; thickness</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Press brake forming</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>TIG / MIG welding services</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Powder coating & finishing</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border-t border-default-300 lg:sticky top-150">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <img src="assets/images/service/icon-3.svg" class="size-10">
+                                    <div>
+                                        <img src="assets/images/service/service-3.png" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl">CNC machining services</h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>±0.0001&quot; tolerance capability</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Multi-axis machining centers</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Materials: metals, plastics, composites</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Prototype to production volumes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white border-t border-default-300 lg:sticky top-200">
+                    <div class="flex py-10 gap-5">
+                        <div class="grid md:grid-cols-5 lg:gap-10 gap-6">
+                            <div class="md:col-span-2">
+                                <div class="flex md:flex-row flex-col items-start lg:gap-12.5 gap-6">
+                                    <img src="assets/images/service/icon-4.svg" class="size-10">
+                                    <div>
+                                        <img src="assets/images/service/service-4.png" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <div class="grid xl:grid-cols-2 gap-4">
+                                    <h2 class="lg:text-3xl md:text-2xl text-xl">Injection molding</h2>
+
+                                    <div>
+                                        <div class="text-sm lg:mb-10 mb-4">Features</div>
+                                        <div class="space-y-2.5">
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>50–1000 ton molding machines</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Multi-cavity tooling design</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Insert molding capabilities</div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <i class="iconify tabler--check size-5 text-primary"></i>
+                                                <div>Cleanroom fabrication unit</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="min-w-10 size-10 rounded-ee-xl rounded bg-primary text-white flex items-center justify-center">
+                            <i class="iconify tabler--arrow-narrow-right size-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative size-full pb-12.5">
+        <div class="container">
+            <div class="bg-default-900 lg:p-12 p-6 bg-[url(../images/cta-bg.png)] bg-no-repeat bg-cover rounded">
+                <div class="flex md:flex-row flex-col md:items-center justify-between gap-6">
+                    <h2 class="lg:text-4xl md:text-3xl text-2xl text-white">Ready to start your <br>Next project?</h2>
+
+                    <div>
+                        <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                            <!-- TEXT -->
+                            <span class="py-3.75 ps-6">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Schedule Consultation
+                                    </span>
+                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Schedule Consultation
+                                    </span>
+                                </span>
+                            </span>
+
+                            <!-- ICON -->
+                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action – Ready to start your next project? -->
+    <section class="relative size-full">
+
+        <div class="xl:h-175 w-full h-full relative overflow-hidden">
+            <div class="bg-[url(../images/about/vector.webp)] bg-no-repeat bg-cover bg-position-[50%] absolute top-21.5 -start-[5%] w-[130%] xl:h-175 h-150 overflow-hidden filter-[blur(30px)]"></div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 z-1">
+            <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="bg-default-900">
+            <div class="container py-25 relative z-10">
+                <div class="flex lg:flex-row flex-col justify-between items-start xl:gap-20 gap-12.5 mb-32.5">
+
+                    <div class="inline-flex items-center gap-7.5 rounded-2xl py-1.25 px-3.5 bg-default-950 border border-default-800">
+                        <div class="size-2 bg-primary"></div>
+                        <div class="text-sm text-default-100">What we manufacture</div>
+                    </div>
+
+                    <div class="ms-auto">
+                        <div data-target="50,000" class="lg:text-7xl md:text-[56px] text-[48px] leading-normal text-white mb-2.5">50,000 <span class="text-primary">+</span></div>
+                        <p class="text-default-600 max-w-107">Precision-built products delivered to clients across industries and continents.</p>
+                    </div>
+                </div>
+
+                <img src="assets/images/products/prototype.svg" alt="Product Info Image" class="size-full">
+            </div>
+
+            <div class="container-full py-25 relative z-10">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-7.5" data-toggle="gallery">
+
+                    <!-- Product 1 -->
+                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
+                        <h3 class="text-2xl text-white mb-5">Aluminum Gear Housing</h3>
+                        <a href="assets/images/products/product-1.png">
+                            <img src="assets/images/products/product-1.png" alt="" class="rounded-md mb-7.5">
+                        </a>
+
+                        <p class="mb-7.5 text-default-400">
+                            Precision CNC machined aluminum housings for gear systems and machinery.
+                        </p>
+
+                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-400 text-sm">Material</div>
+                                <div class="text-white text-sm">Aluminum 6061 / 7075</div>
+                            </div>
+                            <div>
+                                <div class="text-default-400 text-sm">Capability</div>
+                                <div class="text-white text-sm">CNC Machining</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-400 text-sm">Size Range</div>
+                                <div class="text-white text-sm">Custom dimensions up to 500mm</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
+                        <h3 class="text-2xl text-white mb-5">Custom Plastic Enclosures</h3>
+                        <a href="assets/images/products/product-2.png">
+                            <img src="assets/images/products/product-2.png" alt="" class="rounded-md mb-7.5">
+                        </a>
+
+                        <p class="mb-7.5 text-default-400">
+                            Injection molded enclosures for electronics and telecom applications.
+                        </p>
+
+                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-400 text-sm">Material</div>
+                                <div class="text-white text-sm">ABS, Polycarbonate, Nylon</div>
+                            </div>
+                            <div>
+                                <div class="text-default-400 text-sm">Capability</div>
+                                <div class="text-white text-sm">Injection Molding</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-400 text-sm">Size Range</div>
+                                <div class="text-white text-sm">Varies – custom moldable</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
+                        <h3 class="text-2xl text-white mb-5">Electrical Control Panels</h3>
+                        <a href="assets/images/products/product-3.png">
+                            <img src="assets/images/products/product-3.png" alt="" class="rounded-md mb-7.5">
+                        </a>
+
+                        <p class="mb-7.5 text-default-400">
+                            Weather-resistant control panels for industrial automation systems.
+                        </p>
+
+                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-400 text-sm">Material</div>
+                                <div class="text-white text-sm">Mild Steel, Stainless Steel</div>
+                            </div>
+                            <div>
+                                <div class="text-default-400 text-sm">Capability</div>
+                                <div class="text-white text-sm">Sheet Metal Fabrication & Assembly</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-400 text-sm">Size Range</div>
+                                <div class="text-white text-sm">Small to full-scale cabinets</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="bg-default-900 border border-default-700 rounded py-7.5 px-5">
+                        <h3 class="text-2xl text-white mb-5">Precision Shaft Assemblies</h3>
+                        <a href="assets/images/products/product-4.png">
+                            <img src="assets/images/products/product-4.png" alt="" class="rounded-md mb-7.5">
+                        </a>
+
+                        <p class="mb-7.5 text-default-400">
+                            High-precision steel shafts for automotive and industrial equipment.
+                        </p>
+
+                        <div class="divide-y divide-default-700 *:py-4 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-400 text-sm">Material</div>
+                                <div class="text-white text-sm">Alloy Steel, Stainless Steel</div>
+                            </div>
+                            <div>
+                                <div class="text-default-400 text-sm">Capability</div>
+                                <div class="text-white text-sm">Turning & Grinding</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-400 text-sm">Size Range</div>
+                                <div class="text-white text-sm">Up to 1200mm</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container md:pb-25 pb-20 relative z-10">
+                <div class="flex lg:flex-row flex-col lg:items-center items-start gap-7.5 mt-7.5">
+
+                    <h3 class="lg:text-[42px] md:text-[34px] text-[28px] text-white">Explore our complete product range across industries.</h3>
+
+                    <div class="grow flex flex-wrap gap-4 whitespace-nowrap">
+                        <a href="#" target="_blank" class="text-white underline transition-all hover:decoration-transparent flex items-center">
+                            Download Brochure
+                            <i class="iconify tabler--download size-6 ms-4"></i>
+                        </a>
+
+                        <a href="products.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-primary text-base font-medium text-white transition-all">
+                            <!-- TEXT -->
+                            <span class="py-3.75 ps-6">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        View All Products
+                                    </span>
+                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        View All Products
+                                    </span>
+                                </span>
+                            </span>
+
+                            <!-- ICON -->
+                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-default-900 text-white">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / What We Manufacture Section -->
+    <section class="relative size-full lg:py-50 md:py-25 py-20">
+        <div class="container relative z-10">
+            <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                <div class="size-2 bg-primary"></div>
+                <div class="text-sm text-default-900">Real-world success</div>
+            </div>
+
+            <div class="grid grid-cols-2 items-end gap-12.5 mt-7.5 mb-12.5">
+                <div>
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Real <span class="text-primary">results</span> from real <br> projects</h1>
+                </div>
+
+                <div class="ms-auto">
+                    <button class="swiper-button-prev static! group inline-flex! size-10! items-center justify-center gap-5 rounded rounded-es-2xl bg-default-200 text-default-900! text-base font-medium transition-all">
+                        <span class="relative block overflow-hidden">
+                            <span class="block group-hover:-translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                <i class="iconify tabler--arrow-narrow-left flex size-6"></i>
+                            </span>
+                            <span class="absolute top-0 start-7 group-hover:start-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                <i class="iconify tabler--arrow-narrow-left flex size-6"></i>
+                            </span>
+                        </span>
+                    </button>
+
+                    <button class="swiper-button-next static! group inline-flex! size-10! items-center justify-center gap-5 rounded rounded-ee-2xl bg-default-200 text-default-900! text-base font-medium transition-all">
+                        <span class="relative block overflow-hidden">
+                            <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                            </span>
+                            <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper project-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-5">
+                            <div class="lg:col-span-2">
+                                <div class="flex h-full flex-col rounded-md gap-5 bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                                    <h3 class="text-2xl lg:text-[28px] text-white">
+                                        Lightweight castings for Industrial equipment
+                                    </h3>
+                                    <p class="text-default-200">
+                                        Redesigned metal castings to reduce material use and maintain strength, optimizing cost and weight.
+                                    </p>
+
+                                    <div class="mt-auto flex flex-wrap items-end justify-between gap-4">
+                                        <div>
+                                            <h3 class="mb-2.5 text-2xl md:text-4xl lg:text-[42px] text-white">35%</h3>
+                                            <div class="text-default-200">Heavy-duty machinery</div>
+                                        </div>
+
+                                        <a href="case-studies.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                            <!-- TEXT -->
+                                            <span class="py-3.75 ps-6">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <!-- ICON -->
+                                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-3">
+                                <div class="relative overflow-hidden rounded-md group">
+                                    <img src="assets/images/products/product-3.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+                                    <img src="assets/images/client/2-light.svg" class="absolute top-10 start-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-5">
+                            <div class="lg:col-span-2">
+                                <div class="flex h-full flex-col rounded-md gap-5 bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                                    <h3 class="text-2xl lg:text-[28px] text-white">
+                                        Precision CNC milling for automotive components
+                                    </h3>
+                                    <p class="text-default-200">
+                                        Improved machining process to achieve tighter tolerances and faster production cycles for car parts.
+                                    </p>
+
+                                    <div class="mt-auto flex items-end justify-between">
+                                        <div>
+                                            <h3 class="mb-2.5 text-2xl md:text-4xl lg:text-[42px] text-white">54%</h3>
+                                            <div class="text-default-200">Engine parts</div>
+                                        </div>
+
+                                        <a href="case-studies.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                            <!-- TEXT -->
+                                            <span class="py-3.75 ps-6">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <!-- ICON -->
+                                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-3">
+                                <div class="relative overflow-hidden rounded-md group">
+                                    <img src="assets/images/products/product-4.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+                                    <img src="assets/images/client/4-light.svg" class="absolute top-10 start-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-5">
+                            <div class="lg:col-span-2">
+                                <div class="flex h-full flex-col rounded-md gap-5 bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                                    <h3 class="text-2xl lg:text-[28px] text-white">
+                                        Additive manufacturing for custom tooling
+                                    </h3>
+                                    <p class="text-default-200">
+                                        Implemented 3D-printed tools to accelerate prototyping and reduce lead time in production.
+                                    </p>
+
+                                    <div class="mt-auto flex items-end justify-between">
+                                        <div>
+                                            <h3 class="mb-2.5 text-2xl md:text-4xl lg:text-[42px] text-white">50%</h3>
+                                            <div class="text-default-200">Traditional tooling</div>
+                                        </div>
+
+                                        <a href="case-studies.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                            <!-- TEXT -->
+                                            <span class="py-3.75 ps-6">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <!-- ICON -->
+                                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-3">
+                                <div class="relative overflow-hidden rounded-md group">
+                                    <img src="assets/images/products/product-2.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+                                    <img src="assets/images/client/5-light.svg" class="absolute top-10 start-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-5">
+                            <div class="lg:col-span-2">
+                                <div class="flex h-full flex-col rounded-md gap-5 bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                                    <h3 class="text-2xl lg:text-[28px] text-white">
+                                        Automated assembly line optimization
+                                    </h3>
+                                    <p class="text-default-200">
+                                        Streamlined assembly processes with robotics, reducing labor costs and improving output consistency.
+                                    </p>
+
+                                    <div class="mt-auto flex items-end justify-between">
+                                        <div>
+                                            <h3 class="mb-2.5 text-2xl md:text-4xl lg:text-[42px] text-white">40%</h3>
+                                            <div class="text-default-200">Assembly process</div>
+                                        </div>
+
+                                        <a href="case-studies.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                            <!-- TEXT -->
+                                            <span class="py-3.75 ps-6">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <!-- ICON -->
+                                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-3">
+                                <div class="relative overflow-hidden rounded-md group">
+                                    <img src="assets/images/products/product-1.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+                                    <img src="assets/images/client/3-light.svg" class="absolute top-10 start-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-2 gap-5">
+                            <div class="lg:col-span-2">
+                                <div class="flex h-full flex-col rounded-md gap-5 bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                                    <h3 class="text-2xl lg:text-[28px] text-white">
+                                        Surface treatment innovation for corrosion resistance
+                                    </h3>
+                                    <p class="text-default-200">
+                                        Developed a new coating process to extend the lifespan of metal parts in harsh environments.
+                                    </p>
+
+                                    <div class="mt-auto flex items-end justify-between">
+                                        <div>
+                                            <h3 class="mb-2.5 text-2xl md:text-4xl lg:text-[42px] text-white">65%</h3>
+                                            <div class="text-default-200">Metal parts</div>
+                                        </div>
+
+                                        <a href="case-studies.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                            <!-- TEXT -->
+                                            <span class="py-3.75 ps-6">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        View detail
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                            <!-- ICON -->
+                                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                                <span class="relative block overflow-hidden">
+                                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-3">
+                                <div class="relative overflow-hidden rounded-md group">
+                                    <img src="assets/images/products/product-5.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+                                    <img src="assets/images/client/5-light.svg" class="absolute top-10 start-10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-7.5 border-default-300">
+
+            <div class="grid lg:grid-cols-2 gap-12.5">
+                <div class="flex flex-wrap items-center lg:gap-5 gap-3">
+                    <div class="flex -space-x-5">
+                        <img src="assets/images/user/avatar-1.png" alt="" class="size-16 border-2 border-white rounded-full">
+                        <img src="assets/images/user/avatar-2.png" alt="" class="size-16 border-2 border-white rounded-full">
+                    </div>
+
+                    <div>
+                        <h3 class="lg:text-[28px] text-2xl mb-2.5">Need some help?</h3>
+                        <p>We're here to provide support and assistance.</p>
+                    </div>
+                </div>
+
+                <div class="text-end">
+                    <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl text-white text-base font-medium bg-default-900 transition-all">
+                        <!-- TEXT -->
+                        <span class="py-3.75 ps-6">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Contact us Now
+                                </span>
+                                <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Contact us Now
+                                </span>
+                            </span>
+                        </span>
+
+                        <!-- ICON -->
+                        <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                                <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative size-full py-5">
+        <div class="relative z-10 flex gap-5 flex-nowrap w-full overflow-hidden">
+            <ul class="infinite-scroll-inverse flex gap-5 justify-start items-center [&>li]:flex [&>li]:items-center [&>li]:justify-center [&>li]:bg-default-100 [&>li]:rounded [&>li]:w-57 [&>li]:h-39 [&>li]:mx-auto [&>li>img]:w-25">
+                <li><img src="assets/images/client/1.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/2.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/3.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/4.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/5.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/6.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/7.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/8.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/9.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/10.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/11.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/12.svg" alt="client-1"></li>
+            </ul>
+
+            <ul class="infinite-scroll-inverse flex gap-5 justify-start items-center [&>li]:flex [&>li]:items-center [&>li]:justify-center [&>li]:bg-default-100 [&>li]:rounded [&>li]:w-57 [&>li]:h-39 [&>li]:mx-auto [&>li>img]:w-25">
+                <li><img src="assets/images/client/1.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/2.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/3.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/4.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/5.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/6.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/7.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/8.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/9.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/10.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/11.svg" alt="client-1"></li>
+                <li><img src="assets/images/client/12.svg" alt="client-1"></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Blog / Insights & Article -->
+    <section class="relative size-full py-37.5">
+        <img src="assets/images/why-choose.png" class="absolute inset-0 size-full bg-cover bg-no-repeat bg-position-[50%]">
+
+        <div class="container">
+            <div class="bg-default-900/50 rounded-md border border-white/10 [backdrop-filter:blur(5px)] max-w-132 lg:p-12.5 md:p-7.5 p-6">
+                <h2 class="lg:text-[32px] md:text-[28px] text-2xl text-white mb-7.5">Manufacturing solutions you can count on</h2>
+
+                <div class="space-y-2.5  mb-7.5">
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">Decades of experience</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">Certified quality assurance</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">On-time delivery</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">End-to-end solutions</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">Advanced technology</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="iconify tabler--check flex size-6 text-primary"></i>
+                        <p class="text-default-200">Customer-centric spproach</p>
+                    </div>
+                </div>
+
+                <div class="mb-7.5">
+                    <a href="services.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-primary text-base font-medium text-white transition-all">
+                        <!-- TEXT -->
+                        <span class="py-3.75 ps-6">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Our Capabilities
+                                </span>
+                                <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    Our Capabilities
+                                </span>
+                            </span>
+                        </span>
+
+                        <!-- ICON -->
+                        <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-default-900 text-white">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                                <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <div class="flex -space-x-4.5">
+                        <img src="assets/images/user/avatar-2.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-3.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-4.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
+                        <img src="assets/images/user/avatar-1.png" alt="avatar-1" class="size-12.5 p-0.5 bg-white rounded-md">
+                    </div>
+                    <div>
+                        <div class="flex gap-1.5 mb-2">
+                            <i class="iconify tabler--star-filled flex size-4 text-white"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-white"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-white"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-white"></i>
+                            <i class="iconify tabler--star-filled flex size-4 text-white"></i>
+                        </div>
+                        <p class="text-sm text-default-200">Happy clients worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="relative size-full lg:py-50 md:py-25 py-20">
+        <div class="container-full">
+            <div class="text-center mb-12.5">
+                <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                    <div class="size-2 bg-primary"></div>
+                    <div class="text-sm text-default-900">Built on trust</div>
+                </div>
+                <h1 class="lg:text-[58px] md:text-[34px] text-[28px]">Trusted by <span class="text-primary">clients</span>, proven <br> by results</h1>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-7.5">
+                <div class="flex flex-col md:flex-row gap-7.5">
+
+                    <!-- Tab Nav -->
+                    <div class="min-w-26 p-5 flex items-center justify-center rounded-md bg-default-950">
+                        <nav class="flex md:flex-col flex-row flex-wrap justify-center gap-4" role="tablist" aria-orientation="vertical">
+
+                            <!-- Tab 1 -->
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full active" id="tab-1" aria-selected="true" data-hs-tab="#tab-content-1" role="tab">
+                                <img src="assets/images/user/avatar-1.png" class="size-15 rounded-full">
+                            </button>
+
+                            <!-- Tab 2 -->
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-2" aria-selected="false" data-hs-tab="#tab-content-2" role="tab">
+                                <img src="assets/images/user/avatar-2.png" class="size-15 rounded-full">
+                            </button>
+
+                            <!-- Tab 3 -->
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-3" aria-selected="false" data-hs-tab="#tab-content-3" role="tab">
+                                <img src="assets/images/user/avatar-3.png" class="size-15 rounded-full">
+                            </button>
+
+                            <!-- Tab 4 -->
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-4" aria-selected="false" data-hs-tab="#tab-content-4" role="tab">
+                                <img src="assets/images/user/avatar-4.png" class="size-15 rounded-full">
+                            </button>
+
+                            <!-- Tab 5 -->
+                            <button type="button" class="hs-tab-active:border-primary hs-tab-active:opacity-100 border-3 border-transparent opacity-55 transition-all rounded-full" id="tab-5" aria-selected="false" data-hs-tab="#tab-content-5" role="tab">
+                                <img src="assets/images/user/avatar-5.png" class="size-15 rounded-full">
+                            </button>
+
+                        </nav>
+                    </div>
+                    <!-- End Tab Nav -->
+
+                    <!-- Tab Content -->
+                    <div class="w-full rounded-md bg-default-100 p-10">
+
+                        <!-- Content 1 -->
+                        <div id="tab-content-1" class="h-full" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="flex h-full flex-col">
+                                <div class="mb-5 flex gap-1.5">
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                </div>
+
+                                <p class="text-default-900">
+                                    The team's dedication and innovative approach transformed our ideas into reality. Every stage of the project was handled with care and expertise.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Emily Carter</h3>
+                                    <div class="text-sm text-default-600">Product Designer</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content 2 -->
+                        <div id="tab-content-2" class="hidden h-full" role="tabpanel" aria-labelledby="tab-2">
+                            <div class="flex h-full flex-col">
+                                <div class="mb-5 flex gap-1.5">
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                </div>
+
+                                <p class="text-default-900">
+                                    The precision and efficiency they demonstrated made the entire process effortless. I highly recommend them for any technical project.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Liam Thompson</h3>
+                                    <div class="text-sm text-default-600">Operations Manager</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content 3 -->
+                        <div id="tab-content-3" class="hidden h-full" role="tabpanel" aria-labelledby="tab-3">
+                            <div class="flex h-full flex-col">
+                                <div class="mb-5 flex gap-1.5">
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                </div>
+
+                                <p class="text-default-900">
+                                    Their precision engineering and attention to detail exceeded our expectations. From prototyping to delivery, the entire process was seamless.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">John Matthews</h3>
+                                    <div class="text-sm text-default-600">Procurement Manager</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content 4 -->
+                        <div id="tab-content-4" class="hidden h-full" role="tabpanel" aria-labelledby="tab-4">
+                            <div class="flex h-full flex-col">
+                                <div class="mb-5 flex gap-1.5">
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                </div>
+
+                                <p class="text-default-900">
+                                    I was impressed by their professionalism and attention to detail. Communication was clear, and the final product exceeded expectations.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Sofia Ramirez</h3>
+                                    <div class="text-sm text-default-600">Marketing Lead at BrightWave Tech</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content 5 -->
+                        <div id="tab-content-5" class="hidden h-full" role="tabpanel" aria-labelledby="tab-5">
+                            <div class="flex h-full flex-col">
+                                <div class="mb-5 flex gap-1.5">
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                    <i class="iconify tabler--star-filled size-5 text-primary"></i>
+                                </div>
+
+                                <p class="text-default-900">
+                                    The level of professionalism and commitment to quality was exceptional. Every detail was meticulously handled.
+                                </p>
+
+                                <div class="mt-auto">
+                                    <h3 class="text-2xl lg:text-[28px] mb-2.5">Ethan Brooks</h3>
+                                    <div class="text-sm text-default-600">Project Coordinator at Stellar Industries</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Tab Content -->
+                </div>
+
+
+                <div class="grid md:grid-cols-7 gap-7.5">
+                    <div class="md:col-span-4 space-y-7.5">
+                        <div class="relative overflow-hidden rounded-md bg-[url(../images/review-bg.png)] h-70 w-full flex flex-col items-center justify-center bg-cover bg-no-repeat bg-position-[50%]">
+                            <div class="bg-default-900/60 absolute inset-0 z-1"></div>
+
+                            <div class="relative text-center z-10">
+                                <div class="text-sm text-white mb-2">// 2005-2K25 //</div>
+                                <img src="assets/images/logo-light.svg" alt="" class="h-5">
+                            </div>
+                        </div>
+
+                        <div class="bg-primary rounded-md p-10">
+                            <div class="flex gap-6">
+                                <div>
+                                    <p data-target="98" class="count lg:text-[32px] text-[28px] text-white mb-2.5">98 <span class="text-default-900">%</span></p>
+                                    <p class="text-white">On-Time delivery rate</p>
+                                </div>
+
+                                <div>
+                                    <p data-target="98" class="count lg:text-[32px] text-[28px] text-white mb-2.5">50 <span class="text-default-900">+</span></p>
+                                    <p class="text-white">Skilled professionals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-3">
+                        <div class="flex h-full flex-col gap-7.5 justify-between items-start rounded-md bg-default-900 bg-linear-to-tr from-black via-black to-primary-3 p-10">
+                            <img src="assets/images/contact-use-icon.svg" alt="" class="h-12.5">
+
+                            <div>
+                                <h3 class="lg:text-[28px] text-2xl text-white mb-5">Need help choosing the right product?</h3>
+                                <p class="text-white">Always ready with guidance, product details, and after-sales support.</p>
+                            </div>
+
+                            <a href="contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all">
+                                <!-- TEXT -->
+                                <span class="py-3.75 ps-6">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            Contact Support
+                                        </span>
+                                        <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            Contact Support
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <!-- ICON -->
+                                <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                        <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Insights & Article -->
+    <section class="relative size-full pb-10">
+        <div class="container">
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7.5">
+                <div class="lg:col-span-1 md:col-span-2">
+                    <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300">
+                        <div class="size-2 bg-primary"></div>
+                        <div class="text-sm text-default-900">Insights & Article</div>
+                    </div>
+
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px] my-5">Latest from our <span class="text-primary">blog</span></h1>
+
+                    <a href="blog.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl text-white text-base font-medium bg-default-900 transition-all">
+                        <!-- TEXT -->
+                        <span class="py-3.75 ps-6">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    View all Blog
+                                </span>
+                                <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    View all Blog
+                                </span>
+                            </span>
+                        </span>
+
+                        <!-- ICON -->
+                        <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                            <span class="relative block overflow-hidden">
+                                <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                                <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                    <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="relative overflow-hidden rounded-md group">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <img src="assets/images/blog/blog-8.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+
+                    <div class="bg-linear-to-b from-transparent to-default-900/80 absolute inset-0 z-1 flex flex-col items-start justify-end p-6">
+                        <h3 class="lg:text-[28px] text-2xl text-white mb-2.5">Breakthroughs powering manufacturing efficiency</h3>
+                        <div class="underline text-primary-1">Read full blog</div>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-md group">
+                    <a href="#" class="absolute inset-0 z-10"></a>
+                    <img src="assets/images/blog/blog-1.png" class="rounded-md w-full h-100 object-cover overflow-hidden transition-all duration-500 group-hover:scale-110">
+
+                    <div class="bg-linear-to-b from-transparent to-default-900/80 absolute inset-0 z-1 flex flex-col items-start justify-end p-6">
+                        <h3 class="lg:text-[28px] text-2xl text-white mb-2.5">Breakthroughs powering manufacturing efficiency</h3>
+                        <div class="underline text-primary-1">Read full blog</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12.5 text-center">
+
+            </div>
+
+        </div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>
